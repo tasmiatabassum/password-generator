@@ -1,4 +1,5 @@
 import random
+from password_strength import PasswordStats
 
 def shuffle(string):
     temporarylist = list(string)
@@ -28,3 +29,7 @@ password = uppercase_letter1 +symbol3+ uppercase_letter2 + symbol4+lowercase_let
 password = shuffle(password)
 
 print('Here is your generated password: ', password)
+
+print("Password strength ranges from  0.00 to 0.99, strong passwords start at 0.66.")
+print("Your password strength is : ", stats.strength())
+
